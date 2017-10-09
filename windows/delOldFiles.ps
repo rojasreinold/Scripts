@@ -1,0 +1,10 @@
+$limit= (Get-Date).AddDays(-15)
+$path = "C:\The\path\to\del"
+
+#Delete files odler than the $limit
+Get-ChildItem -Path $path -Recurse -Force | Where-Object { !$_.PSIsContainer -and $_.CreationTime -lt $limit } | Remove-Item -Force -WhatIf
+
+
+
+#Delete any empty dirs after
+Get-ChildItem -path $path -Recurse -Force | Where-Object { $_.PSIsContainer -and (Get-ChildItem -Path $_.FullName -Recurse -Force | Where-Object {!$_.PSIsContainer}) -eq $null} | Remove-Item -Force -Recurse -WhatIf

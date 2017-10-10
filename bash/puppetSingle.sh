@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#setup puppet when re-imaging a system
+###setup puppet when re-imaging a system
 
 centVersion=$(cut -d' ' -f3 < /etc/redhat-release)
 hostnameCur=$(hostname)

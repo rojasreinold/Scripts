@@ -1,4 +1,6 @@
 #!/bin/bash
+
+### Test temperatures for drives
 while [ 0 == 0 ]
 do
 	echo `date` > /root/temperaturesTest

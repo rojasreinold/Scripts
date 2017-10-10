@@ -1,4 +1,5 @@
 #!/bin/bash
+###Setup a workstation after re-imaging
 
 echo "what is the hostnumber? ex: 001 \n"
 read newHostName

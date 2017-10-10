@@ -11,9 +11,7 @@ system('/bin/date')
 ?>
 <?php
 echo '<pre>';
-// php to in a very ugly way show us how many nuke users there are and who they are 
-// to rat out the multiple license nuke users.. 
-
+// Check the clients running on clarisse and some user information
 $number = popen("./licinfo serverName:0001 list", 'r');
 if ($number) {
 	if ($number) {

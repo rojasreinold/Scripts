@@ -1,4 +1,7 @@
+### Find all of the Nuke Read nodes
+
 print "Starting nuke Script"
+
 
 nuke.startPerformanceTimers()
 

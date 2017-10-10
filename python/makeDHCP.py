@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+### make file to configure Active Directory dhcp server
 import MySQLdb
 import sys
 
